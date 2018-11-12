@@ -21,9 +21,11 @@ function time() {
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
-  // add a zero in front of numbers<10
+
+  // Convert time from military to standard
   h = setStandardTime(h);
   
+  // add a zero in front of numbers<10
   h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
