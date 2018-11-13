@@ -14,6 +14,7 @@ function checkTime(i) {
 function setStandardTime(h) {
   if (h > 12) return h - 12;
   if (h === 0) return 12;
+  return h;
 }
 
 function time() {
